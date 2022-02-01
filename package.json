@@ -1,0 +1,27 @@
+{
+  "name": "vidly",
+  "version": "1.0.0",
+  "description": "a movie online service project following `mosh`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexChingEraser/vidly.git"
+  },
+  "keywords": [],
+  "author": "AlexChing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexChingEraser/vidly/issues"
+  },
+  "homepage": "https://github.com/AlexChingEraser/vidly#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "debug": "^4.3.3",
+    "express": "^4.17.2",
+    "joi": "^17.6.0",
+    "pug": "^3.0.2"
+  }
+}
