@@ -21,10 +21,23 @@ const schema = new mongoose.Schema({
     isPublishde: Boolean
 })
 ```
+argument validation: when the `name` is required, we can specified it as: `name: { type: String, required: true }`
+- customer validation:
+    ```javascript
+    tags: {
+        type: String,
+        validator: {
+            validation: function(e) {
+                // some logic process
+            },
+            message: 'the error message'
+        }
+    }
+    ```
 
-2. types
-- `String`
-- `Number`
+1. types
+- `String`: minlength, maxlength, enum, match
+- `Number`: min, max
 - `Date`
 - `Buffer`
 - `Boolean`

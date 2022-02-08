@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const debug = require('debug')('main')
 const homeRouter = require('./routers/home.js')
+const genresRouter = require('./routers/genres.js')
 const config = require('config')
 
 app.set('view engine', 'pug')
@@ -9,6 +10,7 @@ app.set('views', './views')
 
 app.use(express.json()); // parse body to .json and append to req.body property
 app.use('/', homeRouter)
+app.use('/genres', genresRouter)
 
 debug(`the name of app: ${config.get('appname')}`)
 debug(`the passwd of app: ${config.get('passwd')}`)
